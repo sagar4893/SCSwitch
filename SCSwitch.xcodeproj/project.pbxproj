@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1B9E50BB242D12B700E3047A /* SCSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9E50B9242D12B700E3047A /* SCSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B9E50CF242D380600E3047A /* SCSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E50CE242D380600E3047A /* SCSwitch.swift */; };
+		1B9E50EF242E736600E3047A /* SCSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E50EE242E736600E3047A /* SCSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B9E50B6242D12B700E3047A /* SCSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9E50B9242D12B700E3047A /* SCSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSwitch.h; sourceTree = "<group>"; };
 		1B9E50BA242D12B700E3047A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B9E50CE242D380600E3047A /* SCSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSwitch.swift; sourceTree = "<group>"; };
+		1B9E50EE242E736600E3047A /* SCSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,19 +48,11 @@
 		1B9E50B8242D12B700E3047A /* SCSwitch */ = {
 			isa = PBXGroup;
 			children = (
-				1B9E50CD242D380600E3047A /* Classes */,
+				1B9E50EE242E736600E3047A /* SCSwitch.swift */,
 				1B9E50B9242D12B700E3047A /* SCSwitch.h */,
 				1B9E50BA242D12B700E3047A /* Info.plist */,
 			);
 			path = SCSwitch;
-			sourceTree = "<group>";
-		};
-		1B9E50CD242D380600E3047A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				1B9E50CE242D380600E3047A /* SCSwitch.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9E50CF242D380600E3047A /* SCSwitch.swift in Sources */,
+				1B9E50EF242E736600E3047A /* SCSwitch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +267,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 53VACY2577;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -292,6 +284,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.seggy.SCSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -303,10 +296,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 53VACY2577;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -320,6 +313,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.seggy.SCSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
